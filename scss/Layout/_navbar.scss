@@ -1,0 +1,39 @@
+#navbar {
+    background-color: #101010;
+    position: fixed;
+    top: -80px;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    z-index: 100;
+    transition: all 300ms ease-in-out;
+
+    .navbar-brand {
+        img {
+            max-height: 40px;
+        }
+    }
+
+    .scrollNavbar {
+        ul {
+            li {
+                a {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: .8em;
+                    display: inline-block;
+                    padding: 20px 24px;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    color: #fff;
+                }
+
+                .active {
+                    a {
+                        color: #fbbd61;
+                    }
+                }
+            }
+        }
+    }
+}

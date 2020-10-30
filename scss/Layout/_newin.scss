@@ -1,0 +1,186 @@
+.newIn {
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    .row {
+        .col-sm-12 {
+            h2 {
+                font-size: 18px;
+                margin-bottom: 40px;
+                letter-spacing: 1.7px;
+                text-transform: uppercase;
+                color: #ec7532;
+                border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+                padding-bottom: 20px;
+
+                &::after {
+                    position: absolute;
+                    right: auto;
+                    top: 38px;
+                    display: block;
+                    width: 125px;
+                    height: 4px;
+                    content: '';
+                    background-image: linear-gradient(to right, #fbbd61, #ec7532);
+                }
+            }
+
+            .newIn__content {
+                .newIn__slide {
+                    .fa-angle-left {
+                        left: -45px;
+
+                        &:hover {
+                            left: -40px;
+                            opacity: .6;
+                        }
+                    }
+
+                    .fa-angle-right {
+                        right: -45px;
+
+                        &:hover {
+                            right: -40px;
+                            opacity: .6;
+                        }
+                    }
+
+                    .slick-arrow {
+                        font-size: 30px;
+                        position: absolute;
+                        top: 35%;
+                        cursor: pointer;
+                        transition: all 300ms ease-in-out;
+                        background: linear-gradient(#fbbd61, #ec7532);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+                    .col-3 {
+                        .newIn__img {
+                            position: relative;
+                            overflow: hidden;
+                            border-radius: 10px;
+                            margin-bottom: 20px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                display: block;
+                            }
+
+                            .newIn__overlay {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 200%;
+                                height: 100%;
+                                opacity: .7;
+                                background: linear-gradient(to bottom, #fbbd61, #ec7532);
+                                transform: skewX(30deg) translateX(-130%);
+                                transition: all .5s;
+                            }
+
+                            &:hover {
+                                .newIn__overlay {
+                                    transform: skewX(30deg) translateX(-30%);
+                                }
+                            }
+
+                            .newIn__readMore {
+                                position: absolute;
+                                top: 0;
+                                z-index: 1;
+                                width: 100%;
+                                height: 100%;
+                                text-align: center;
+                                display: flex;
+                                transition: .3s;
+                                transition-delay: .1s;
+                                transform: scale(.9);
+                                text-align: center;
+                                align-items: center;
+                                opacity: 0;
+
+                                &:hover {
+                                    transform: scale(1.05);
+                                    opacity: 1;
+                                }
+
+                                .newIn__box {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    width: 100%;
+
+                                    .play {
+                                        font-size: 32px;
+                                        line-height: 55px;
+                                        display: block;
+                                        width: 70px;
+                                        height: 70px;
+                                        margin: 0 auto 20px;
+                                        color: #fff;
+                                        color: #fff;
+                                        border: solid 2px #fff;
+                                        border-radius: 50%;
+                                        transition: .3s;
+                                        transition-delay: .1s;
+                                        text-decoration: none;
+                                        outline: none;
+
+                                        &:hover {
+                                            transform: scale(.9);
+                                        }
+
+                                        i {
+                                            font-size: 14px;
+                                        }
+                                    }
+
+                                    .read-more {
+                                        font-size: 13px;
+                                        display: block;
+                                        margin-bottom: 10px;
+                                        cursor: pointer;
+                                        letter-spacing: 4px;
+                                        text-transform: uppercase;
+                                        color: #fff;
+                                        text-decoration: none;
+                                        outline: none;
+                                    }
+
+                                    .date {
+                                        font-size: 16px;
+                                        display: block;
+                                        color: #F6DECE;
+                                    }
+                                }
+                            }
+                        }
+
+                        .newIn__name {
+                            text-align: center;
+
+                            p {
+                                font-size: 18px;
+                                color: #4a4a4a;
+                                margin: 0 0 10px 0;
+                            }
+
+                            .newIn__star {
+                                color: #FBBD61;
+
+                                .movie-2-last {
+                                    color: #D8D8D8;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
