@@ -1,0 +1,122 @@
+.tabMovie {
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    .tabMovie__container {
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        ul {
+            border-bottom: 1px solid #d8d8d8;
+        }
+
+        .tab-content {
+
+
+            .tab-pane {
+                .movie__tab {
+                    margin-bottom: 40px;
+                    padding-bottom: 40px;
+                    border-bottom: 1px solid #d8d8d8;
+
+                    &:first-child {
+                        padding: 45px 0;
+                    }
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+
+                    .title {
+                        color: #ec7532;
+                        font-size: 14px;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                    }
+
+                    h3 {
+                        font-size: 24px;
+                        font-weight: 300;
+                        letter-spacing: 1px;
+                        color: #101010;
+                    }
+
+                    .description {
+                        font-size: 16px;
+                        color: #717171;
+                    }
+
+                    .full-synopsis {
+                        font-size: 12px;
+                        position: relative;
+                        letter-spacing: 4px;
+                        text-transform: uppercase;
+                        color: #ec7532;
+                        transition: all .5s;
+
+                        &:hover {
+                            text-decoration: none;
+                            color: #101010;
+                        }
+
+                        i {
+                            font-size: 10px;
+                        }
+                    }
+
+                    .bottom-row {
+                        .viewing-time {
+                            font-size: 12px;
+                            letter-spacing: 1.5px;
+                            text-transform: uppercase;
+                            color: #4a4a4a;
+                        }
+
+                        .time {
+                            font-size: 14px;
+                            display: inline-block;
+                            margin-left: 5px;
+                            padding: 7px 10px;
+                            letter-spacing: 2px;
+                            color: #717171;
+                            border-radius: 5px;
+                            background-color: #d8d8d8;
+                            line-height: 1.5;
+                        }
+
+                        .time.past {
+                            opacity: .5;
+                        }
+
+                        .running-time {
+                            font-size: 12px;
+                            text-align: right;
+                            letter-spacing: 1.5px;
+                            text-transform: uppercase;
+                            color: #717171;
+                        }
+
+                        .certificate {
+                            font-size: 13px;
+                            font-weight: 700;
+                            line-height: 33px;
+                            display: inline-block;
+                            width: 33px;
+                            height: 33px;
+                            margin-left: 5px;
+                            text-align: center;
+                            letter-spacing: 0;
+                            color: #fff;
+                            border-radius: 50%;
+                            background: #4a4a4a;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
