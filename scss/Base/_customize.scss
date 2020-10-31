@@ -1,0 +1,180 @@
+.tabMovie {
+    .tabMovie__container {
+        .nav-pills {
+            .nav-item {
+                .nav-link {
+                    font-size: 18px;
+                    position: relative;
+                    display: block;
+                    padding: 10px 30px 15px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #4a4a4a;
+                    background-color: transparent;
+
+                    &::after {
+                        position: absolute;
+                        bottom: -1px;
+                        left: 0;
+                        display: block;
+                        width: 0;
+                        height: 4px;
+                        content: '';
+                        transition: all .25s ease-in-out;
+                        background-image: linear-gradient(to right, #fbbd61, #ec7532);
+                    }
+
+                    &:hover {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .active {
+                    color: #ec7532;
+
+                    &::after {
+                        position: absolute;
+                        bottom: -1px;
+                        left: 0;
+                        display: block;
+                        width: 100%;
+                        height: 4px;
+                        content: '';
+                        transition: all .25s ease-in-out;
+                        background-image: linear-gradient(to right, #fbbd61, #ec7532);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 750px;
+    }
+
+    .col-sm-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-sm-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 970px;
+    }
+
+    .col-md-2 {
+        max-width: 16.66666667%;
+    }
+
+    .col-md-10 {
+        max-width: 83.33333333%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 600px) {
+    .tabMovie {
+        .tabMovie__container {
+            .nav-pills {
+                display: block;
+                border-bottom: none;
+
+                .nav-item {
+                    .nav-link {
+                        font-size: 18px;
+                        position: relative;
+                        display: block;
+                        padding: 10px 30px 15px;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        color: #4a4a4a;
+                        background-color: transparent;
+
+                        &::after {
+                            width: 4px;
+                            height: 0;
+                            background-image: linear-gradient(to bottom, #fbbd61, #ec7532);
+                        }
+
+                        &:hover {
+                            &::after {
+                                width: 4px;
+                                height: 100%;
+                            }
+                        }
+                    }
+
+                    .active {
+                        color: #ec7532;
+
+                        &::after {
+                            width: 4px;
+                            height: 100%;
+                            background-image: linear-gradient(to bottom, #fbbd61, #ec7532);
+                        }
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .tab-content {
+                .tab-pane {
+                    .row {
+                        display: block;
+
+                        .col-sm-3 {
+                            flex: 0;
+                            max-width: 100%;
+
+                            img {
+                                width: 100%;
+                                margin-bottom: 30px;
+                            }
+                        }
+
+                        .viewing-time {
+                            display: block;
+                            margin-bottom: 25px;
+                        }
+
+
+                        .bottom-row {
+                            .running-time {
+                                text-align: left !important;
+                                padding-top: 10px;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
