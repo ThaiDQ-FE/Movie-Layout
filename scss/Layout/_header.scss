@@ -6,6 +6,8 @@ header {
     transform: translateX(-50%);
 
     p {
+        padding-right: 20px;
+
         span {
             font-size: 14px;
             border-right: 1px dotted rgba(255, 255, 255, .5);
@@ -17,6 +19,12 @@ header {
     }
 
     nav {
+        .navbar-toggler {
+            i {
+                color: #fbbd61;
+            }
+        }
+
         #movieNavBar {
             ul {
                 border-bottom: 1px solid rgba(255, 255, 255, .2);
