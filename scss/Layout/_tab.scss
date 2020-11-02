@@ -1,6 +1,5 @@
 .tabMovie {
     padding-top: 75px;
-    padding-bottom: 75px;
 
     .tabMovie__container {
         img {
@@ -14,8 +13,6 @@
         }
 
         .tab-content {
-
-
             .tab-pane {
                 .movie__tab {
                     margin-bottom: 40px;
@@ -29,7 +26,6 @@
                     &:last-child {
                         border-bottom: none;
                     }
-
 
                     .title {
                         color: #ec7532;
@@ -56,7 +52,7 @@
                         letter-spacing: 4px;
                         text-transform: uppercase;
                         color: #ec7532;
-                        transition: all .5s;
+                        transition: all 0.5s;
 
                         &:hover {
                             text-decoration: none;
@@ -89,7 +85,7 @@
                         }
 
                         .time.past {
-                            opacity: .5;
+                            opacity: 0.5;
                         }
 
                         .running-time {
