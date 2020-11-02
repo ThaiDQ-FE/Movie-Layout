@@ -1,0 +1,26 @@
+.contact {
+    padding: 50px 0;
+    .contact__p {
+        text-align: center;
+        p {
+            &:first-child {
+                font-size: 23px;
+                font-weight: 300;
+                margin-bottom: 10px;
+                text-align: center;
+                letter-spacing: 1px;
+                margin-bottom: 0;
+                color: #4a4a4a;
+            }
+            &:last-child {
+                font-size: 46px;
+                font-weight: 400;
+                background: linear-gradient(330deg, #fbbd61 0%, #ec7532 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                margin-bottom: 0;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}
