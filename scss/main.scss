@@ -1,16 +1,21 @@
 // Helper
+@import "./Helper/variable";
+@import "./Helper/mixin";
 // Vendor
 
 // Base
-@import './Base/reset';
-@import './Base/customize';
+@import "./Base/reset";
+@import "./Base/customize";
 // Components
 // Layouts
-@import './Layout/navbar';
-@import './Layout/header';
-@import './Layout/carousel';
-@import './Layout/newin';
-@import './Layout/tab';
+@import "./Layout/navbar";
+@import "./Layout/header";
+@import "./Layout/carousel";
+@import "./Layout/newin";
+@import "./Layout/tab";
+@import "./Layout/coming";
+@import "./Layout/contact";
+@import "./Layout/footer";
 
 // Pages
 
