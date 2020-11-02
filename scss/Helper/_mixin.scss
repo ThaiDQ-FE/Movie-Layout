@@ -1,0 +1,9 @@
+@mixin background($background-image, $position) {
+    @if $position == first {
+        background-image: $background-image;
+    } @else if $position == second {
+        background-image: $background-image;
+    } @else if $position == third {
+        background-image: $background-image;
+    }
+}
