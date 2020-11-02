@@ -1,0 +1,1 @@
+$('.venobox').venobox({autoplay:true});
