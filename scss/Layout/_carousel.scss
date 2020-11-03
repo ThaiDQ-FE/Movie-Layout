@@ -1,6 +1,16 @@
 .movieCarousel {
     height: 713px;
     overflow: hidden;
+    position: relative;
+
+    .scroll {
+        position: absolute;
+        z-index: 9999;
+        bottom: 0;
+        left: 50%;
+        margin-left: -45px;
+        animation: Magic 1.5s 1.5s infinite;
+    }
 
     #movieCarousel {
         height: 100%;
@@ -40,7 +50,6 @@
             background-size: cover;
 
             .carousel-item {
-
                 height: 100%;
                 text-align: center;
                 background-color: black;
@@ -58,7 +67,7 @@
                 }
 
                 &::before {
-                    content: '';
+                    content: "";
                     position: absolute;
                     right: 0;
                     top: 0;
@@ -75,7 +84,7 @@
                     transform: translate(-50%, -50%);
 
                     .content {
-                        animation: Blurb .5s .5s forwards;
+                        animation: Blurb 0.5s 0.5s forwards;
                         opacity: 0;
 
                         p {
@@ -89,7 +98,6 @@
                                 color: #fbbd61;
                                 margin: 0;
                             }
-
                         }
 
                         h2 {
@@ -98,13 +106,13 @@
                             letter-spacing: 3px;
                             color: #fff;
                             border: none;
-                            animation: Heading .5s .5s forwards;
+                            animation: Heading 0.5s 0.5s forwards;
                             opacity: 0;
                         }
                     }
 
                     .movie__trailer {
-                        animation: Buttons .5s .5s forwards;
+                        animation: Buttons 0.5s 0.5s forwards;
                         opacity: 0;
 
                         .movie__span {
@@ -129,7 +137,6 @@
                             color: #ec7532;
                             outline: none;
                             box-shadow: none;
-
                         }
 
                         .btn {
@@ -171,8 +178,8 @@
                                 left: -15px;
                                 width: 0;
                                 height: 100%;
-                                content: '';
-                                transition: .4s;
+                                content: "";
+                                transition: 0.4s;
                                 transform: skewX(30deg);
                                 background: #ec7532;
                             }
@@ -189,7 +196,6 @@
         }
     }
 }
-
 
 @keyframes Blurb {
     0% {
@@ -224,5 +230,17 @@
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@keyframes Magic {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(3px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }

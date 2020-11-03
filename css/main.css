@@ -413,6 +413,17 @@ header nav #movieNavBar ul .nav-item:first-child::after {
 .movieCarousel {
   height: 713px;
   overflow: hidden;
+  position: relative;
+}
+
+.movieCarousel .scroll {
+  position: absolute;
+  z-index: 9999;
+  bottom: 0;
+  left: 50%;
+  margin-left: -45px;
+  -webkit-animation: Magic 1.5s 1.5s infinite;
+          animation: Magic 1.5s 1.5s infinite;
 }
 
 .movieCarousel #movieCarousel {
@@ -476,7 +487,7 @@ header nav #movieNavBar ul .nav-item:first-child::after {
 }
 
 .movieCarousel #movieCarousel .carousel-inner .carousel-item::before {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: 0;
@@ -496,8 +507,8 @@ header nav #movieNavBar ul .nav-item:first-child::after {
 }
 
 .movieCarousel #movieCarousel .carousel-inner .carousel-item .carousel-caption .content {
-  -webkit-animation: Blurb .5s .5s forwards;
-          animation: Blurb .5s .5s forwards;
+  -webkit-animation: Blurb 0.5s 0.5s forwards;
+          animation: Blurb 0.5s 0.5s forwards;
   opacity: 0;
 }
 
@@ -520,14 +531,14 @@ header nav #movieNavBar ul .nav-item:first-child::after {
   letter-spacing: 3px;
   color: #fff;
   border: none;
-  -webkit-animation: Heading .5s .5s forwards;
-          animation: Heading .5s .5s forwards;
+  -webkit-animation: Heading 0.5s 0.5s forwards;
+          animation: Heading 0.5s 0.5s forwards;
   opacity: 0;
 }
 
 .movieCarousel #movieCarousel .carousel-inner .carousel-item .carousel-caption .movie__trailer {
-  -webkit-animation: Buttons .5s .5s forwards;
-          animation: Buttons .5s .5s forwards;
+  -webkit-animation: Buttons 0.5s 0.5s forwards;
+          animation: Buttons 0.5s 0.5s forwards;
   opacity: 0;
 }
 
@@ -599,9 +610,9 @@ header nav #movieNavBar ul .nav-item:first-child::after {
   left: -15px;
   width: 0;
   height: 100%;
-  content: '';
-  -webkit-transition: .4s;
-  transition: .4s;
+  content: "";
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   -webkit-transform: skewX(30deg);
           transform: skewX(30deg);
   background: #ec7532;
@@ -688,6 +699,36 @@ header nav #movieNavBar ul .nav-item:first-child::after {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes Magic {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes Magic {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
