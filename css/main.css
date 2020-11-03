@@ -105,8 +105,8 @@ body {
   }
   .col-sm-9 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 75%;
-            flex: 0 0 75%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     max-width: 75%;
   }
   .col-md-9 {
@@ -114,6 +114,9 @@ body {
         -ms-flex: 0 0 75%;
             flex: 0 0 75%;
     max-width: 95%;
+  }
+  .running-time {
+    text-align: right !important;
   }
 }
 
@@ -303,18 +306,42 @@ body {
   max-height: 40px;
 }
 
-#navbar .scrollNavbar ul li a {
-  font-size: 12px;
+#navbar .scrollNavbar ul .nav-item a {
+  font-size: 16px;
   font-weight: 400;
-  line-height: .8em;
+  line-height: 0.8em;
   display: inline-block;
   padding: 20px 24px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
 }
 
-#navbar .scrollNavbar ul li .active a {
+#navbar .scrollNavbar ul .nav-item::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  display: block;
+  background: -webkit-gradient(linear, left top, right top, from(#fbbd61), to(#ec7532));
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#navbar .scrollNavbar ul .nav-item:hover::after {
+  width: 100%;
+}
+
+#navbar .scrollNavbar ul .nav-item:first-child::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: block;
+  background: -webkit-gradient(linear, left top, right top, from(#fbbd61), to(#ec7532));
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+}
+
+#navbar .scrollNavbar ul .active a {
   color: #fbbd61;
 }
 
@@ -351,7 +378,7 @@ header nav #movieNavBar ul {
 header nav #movieNavBar ul .nav-item a {
   font-size: 16px;
   font-weight: 400;
-  line-height: .8em;
+  line-height: 0.8em;
   display: inline-block;
   padding: 20px 24px;
   letter-spacing: 3px;
@@ -360,14 +387,14 @@ header nav #movieNavBar ul .nav-item a {
 }
 
 header nav #movieNavBar ul .nav-item::after {
-  content: '';
+  content: "";
   width: 0;
   height: 3px;
   display: block;
   background: -webkit-gradient(linear, left top, right top, from(#fbbd61), to(#ec7532));
   background: linear-gradient(to right, #fbbd61, #ec7532);
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 header nav #movieNavBar ul .nav-item:hover::after {
@@ -375,7 +402,7 @@ header nav #movieNavBar ul .nav-item:hover::after {
 }
 
 header nav #movieNavBar ul .nav-item:first-child::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 3px;
   display: block;
@@ -1219,7 +1246,7 @@ header nav #movieNavBar ul .nav-item:first-child::after {
 }
 
 .contact {
-  padding: 50px 0;
+  padding: 50px 15px;
 }
 
 .contact .contact__p {

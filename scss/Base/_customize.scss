@@ -97,13 +97,17 @@
     }
 
     .col-sm-9 {
-        flex: 0 0 75%;
+        flex: 0 0 100%;
         max-width: 75%;
     }
 
     .col-md-9 {
         flex: 0 0 75%;
         max-width: 95%;
+    }
+
+    .running-time {
+        text-align: right !important;
     }
 }
 
