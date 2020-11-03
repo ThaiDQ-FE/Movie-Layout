@@ -31,6 +31,45 @@
     <title>Movie Page</title>
   </head>
   <body>
+
+    <div class="scroll-navbar " id="navbar">
+      <nav class="navbar navbar-expand-md container">
+        <a class="navbar-brand" href="#">
+          <img src="./image/logo.svg" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#movieNavBar"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa fa-bars" style="color: #fbbd61"></i>
+        </button>
+        <div class="collapse navbar-collapse scrollNavbar" id="movieNavBar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">WHAT'S ON</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SHORTCODES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">NEWS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
     <header class="container">
       <p class="mb-0 text-right text-white">
         <i class="fas fa-phone-alt"></i>
@@ -2018,6 +2057,8 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <!-- scroll navbar -->
+    <script src="./js/scroll-navbar.js"></script>
     <!-- slick -->
     <script src="./js/slick.min.js"></script>
     <script src="./js/re-slick.js"></script>
